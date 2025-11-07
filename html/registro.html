@@ -1,0 +1,115 @@
+<!-- Formulario de Registro Moderno y Limpio -->
+<style>
+    /* Fondo general */
+    body {
+        margin: 0;
+        font-family: 'Inter', sans-serif;
+        background: #f5f7fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Contenedor del formulario */
+    .form-container {
+        background-color: #ffffff;
+        width: 480px;
+        max-width: 90%;
+        padding: 50px 40px;
+        border-radius: 20px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    /* Título y subtítulo */
+    .form-container h2 {
+        font-size: 2rem;
+        color: #333333;
+        text-align: center;
+        margin: 0;
+    }
+
+    .form-container p {
+        text-align: center;
+        color: #666666;
+        font-size: 1rem;
+        margin-top: 5px;
+    }
+
+    /* Inputs */
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="password"] {
+        width: 100%;
+        padding: 16px 20px;
+        font-size: 1rem;
+        border: 1.5px solid #ddd;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+    }
+
+    .form-container input:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 4px 12px rgba(108, 99, 255, 0.25);
+        outline: none;
+        background-color: #f0f0ff;
+    }
+
+    /* Botón */
+    .form-container button {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 12px;
+        background: #6c63ff;
+        color: #ffffff;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .form-container button:hover {
+        background: #5848d2;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(108, 99, 255, 0.3);
+    }
+
+    /* Enlace de login */
+    .form-container .login-link {
+        text-align: center;
+        font-size: 0.95rem;
+        color: #555555;
+        margin-top: 15px;
+    }
+
+    .form-container .login-link a {
+        color: #6c63ff;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .form-container .login-link a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<form class="form-container">
+    <h2>Registro de Usuario</h2>
+    <p>Crea tu cuenta para potenciar tus habilidades blandas</p>
+
+    <input type="text" placeholder="Nombre completo" required>
+    <input type="email" placeholder="Correo electrónico" required>
+    <input type="password" placeholder="Contraseña" required>
+
+    <button type="submit">Registrarse</button>
+
+    <div class="login-link">
+        ¿Ya tienes cuenta? <a href="/html/login.html">Inicia sesión aquí</a>
+    </div>
+    <script src="../js/script.js"></script>
+
+</form>
